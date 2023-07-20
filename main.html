@@ -9,10 +9,13 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			if(arr.length<=1){
-				return "-Infinity";
-			}
-			 let max = arr[0];
+			//Write your code here
+			 if (arr.length < 2) {
+    return "-Infinity";
+  }
+
+  // Sort the array in descending order
+  let max = arr[0];
 			let sec = arr[0];
 			for(int i = 0;i<arr.length;i++)
 			{
@@ -20,17 +23,15 @@
 					sec = max;
 					max = arr[i];
 				}
-				else if(arr[i]>sec && arr[i]!=max) sec = arr[i];
+				else if{(arr[i]>sec && arr[i]!=max) sec = arr[i];}
+				
 			}
 			return sec;
   }
 
-  // If all elements are the same, return -Infinity
-  return -Infinity;
-			
-		}
-		
-
+  // // If all elements are the same, return -Infinity
+  // return -Infinity;
+		// }
 		function Main() {
 			var n = prompt("Enter the number of elements");
 			var arr = [];
